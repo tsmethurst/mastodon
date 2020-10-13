@@ -11,6 +11,10 @@ class REST::InstanceSerializer < ActiveModel::Serializer
 
   delegate :contact_account, to: :instance_presenter
 
+  def max_toot_chars
+    StatusLengthValidator::MAX_CHARS
+  end
+
   def uri
     Rails.configuration.x.local_domain
   end
