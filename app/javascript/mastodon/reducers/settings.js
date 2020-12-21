@@ -35,6 +35,7 @@ const initialState = ImmutableMap({
       reblog: false,
       mention: false,
       poll: false,
+      status: false,
     }),
 
     quickFilter: ImmutableMap({
@@ -43,6 +44,8 @@ const initialState = ImmutableMap({
       advanced: false,
     }),
 
+    dismissPermissionBanner: false,
+
     shows: ImmutableMap({
       follow: true,
       follow_request: false,
@@ -50,6 +53,7 @@ const initialState = ImmutableMap({
       reblog: true,
       mention: true,
       poll: true,
+      status: true,
     }),
 
     sounds: ImmutableMap({
@@ -59,6 +63,7 @@ const initialState = ImmutableMap({
       reblog: true,
       mention: true,
       poll: true,
+      status: true,
     }),
   }),
 
